@@ -13,3 +13,15 @@ Dependencies needed:
     - npm i body-parser
 - Moment: for time formatting.
     - npm i moment
+
+Note:
+* To run the server you must run first npm install after cloning the repository.
+
+Database:
+-   db_node
+    - Table: tasks
+        - id (primary, auto increment)
+        - title (varchar (255))
+        - activity (text)
+        - status (tiny integer)
+        - date (datetime)
