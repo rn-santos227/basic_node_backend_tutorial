@@ -25,3 +25,6 @@ Database:
         - activity (text)
         - status (tiny integer)
         - date (datetime)
+
+Run the Script:
+* nodemon index.js [ipaddress via ipconfig] 3000

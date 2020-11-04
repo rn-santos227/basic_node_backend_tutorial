@@ -55,10 +55,9 @@ app.post('/tasks/update', (request, response) => {
     const id = request.body.id
     const title = request.body.title
     const activity = request.body.activity
-    const status = request.body.status
     const date = require('moment')(request.body.date).format('YYYY-MM-DD HH:mm:ss')
 
-    const sql = `UPDATE tasks SET title = "${title}", activity = "${activity}", status = ${status}, date = "${date}" WHERE id = ${id}`;
+    const sql = `UPDATE tasks SET title = "${title}", activity = "${activity}", date = "${date}" WHERE id = ${id}`;
     con.query(sql, function (err, result) {
         if (err) response.json(err)
         response.json({
